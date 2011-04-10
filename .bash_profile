@@ -32,6 +32,7 @@ export PATH="/usr/local/lib/node:$PATH"
 
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion.sh
+source ~/.bin/npm-completion.sh
 
 alias l="ls -alp"
 alias ll="ls -lp"
