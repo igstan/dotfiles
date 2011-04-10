@@ -12,6 +12,8 @@
 .scala_history
 .npm
 .subversion
+.Rhistory
+.rstudio-desktop/
 Desktop/
 Documents/
 Downloads/
