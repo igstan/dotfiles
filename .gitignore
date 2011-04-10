@@ -4,6 +4,7 @@
 .Trash
 .bash_history
 .ssh
+.ghc/ghci_history
 Desktop/
 Documents/
 Downloads/
