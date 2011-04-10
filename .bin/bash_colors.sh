@@ -1,3 +1,5 @@
+# Taken from here: https://github.com/garybernhardt/dotfiles/blob/master/bin/bash_colors.sh
+
 DULL=0
 BRIGHT=1
 
@@ -23,9 +25,7 @@ BG_WHITE=47
 
 BG_NULL=00
 
-##
 # ANSI Escape Commands
-##
 ESC="\033"
 NORMAL="$ESC[m"
 RESET="$ESC[${DULL};${FG_WHITE};${BG_NULL}m"
