@@ -20,9 +20,12 @@ tman () {
 }
 
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
-export PS1="\[\033[0;32m\]λ\[\033[0;36m\] \W\[\033[00m\]\[\033[32m\]\$(parse_git_branch)\[\033[00m\]: "
 export GREP_OPTIONS="--color"
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# \[\033]0;\w\007\] puts the full path in Terminal.app's title bar.
+# See this: http://apple.stackexchange.com/questions/5435/terminal-tips-and-tricks-for-mac-os-x/5455#5455
+export PS1="\[\033]0;\w\007\]${GREEN}λ${CYAN} \W${GREEN}\$(parse_git_branch)${RESET}: "
 
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion
