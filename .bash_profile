@@ -8,6 +8,15 @@ take() {
 parse_git_branch() {
     git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/ \1/"
 }
+
+# open a man page in Preview
+pman () {
+    man -t "$@" | open -f -a /Applications/Preview.app
+}
+
+# open a man page in TextMate
+tman () {
+    MANWIDTH=160 MANPAGER='col -bx' man $@ | mate
 }
 
 export CLICOLOR=1
