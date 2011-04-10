@@ -1,0 +1,7 @@
+[user]
+	name = Ionuț G. Stan
+	email = ionut.g.stan@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = mate -wn
