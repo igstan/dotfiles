@@ -5,7 +5,9 @@
 .bash_history
 .ssh
 .ghc/ghci_history
+.io_history
 .npm
+.subversion
 Desktop/
 Documents/
 Downloads/
