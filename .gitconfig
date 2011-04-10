@@ -5,3 +5,6 @@
 	ui = auto
 [core]
 	editor = mate -wn
+[alias]
+	st = status
+	stu = status -u
