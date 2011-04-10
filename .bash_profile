@@ -28,6 +28,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export PS1="\[\033]0;\w\007\]${GREEN}λ${CYAN} \W${GREEN}\$(parse_git_branch)${RESET}: "
 
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="/usr/local/lib/node:$PATH"
 
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion.sh
