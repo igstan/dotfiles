@@ -1,3 +1,4 @@
+.android
 .DS_Store
 .CFUserTextEncoding
 .MacOSX
@@ -5,7 +6,10 @@
 .bash_history
 .ssh
 .ghc/ghci_history
+.cabal
 .io_history
+.irb_history
+.scala_history
 .npm
 .subversion
 Desktop/
@@ -18,3 +22,4 @@ Pictures/
 Projects/
 Public/
 Sites/
+Workspaces/
