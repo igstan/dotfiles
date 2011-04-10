@@ -27,6 +27,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # See this: http://apple.stackexchange.com/questions/5435/terminal-tips-and-tricks-for-mac-os-x/5455#5455
 export PS1="\[\033]0;\w\007\]${GREEN}λ${CYAN} \W${GREEN}\$(parse_git_branch)${RESET}: "
 
+export PATH="$HOME/Library/Haskell/bin:$PATH"
+
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion.sh
 
