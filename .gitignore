@@ -5,6 +5,7 @@
 .bash_history
 .ssh
 .ghc/ghci_history
+.npm
 Desktop/
 Documents/
 Downloads/
