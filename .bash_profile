@@ -27,7 +27,10 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # See this: http://apple.stackexchange.com/questions/5435/terminal-tips-and-tricks-for-mac-os-x/5455#5455
 export PS1="\[\033]0;\w\007\]\[\033[0;32m\]λ\[\033[0;36m\] \W\[\033[00m\]\[\033[32m\]\$(parse_git_branch)\[\033[00m\]: "
 
-export PATH="$HOME/Library/Haskell/bin:$PATH"
+# Disable until GHC 7.0.3 is available with the Haskell Platform
+# export PATH="$HOME/Library/Haskell/bin:$PATH"
+
+export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
 
 source ~/.bin/git-completion.bash
