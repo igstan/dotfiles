@@ -32,6 +32,8 @@ export PS1="\[\033]0;\w\007\]\[\033[0;32m\]λ\[\033[0;36m\] \W\[\033[00m\]\[\033
 
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
+export PATH="$HOME/Projects/android/SDK/tools:$PATH"
+export PATH="$HOME/Projects/android/SDK/platform-tools:$PATH"
 
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion.sh
