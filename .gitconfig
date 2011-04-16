@@ -8,3 +8,4 @@
 [alias]
 	st = status
 	stu = status -u
+	oneline = log --oneline
