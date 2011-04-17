@@ -6,6 +6,7 @@
 .Trash
 .bash_history
 .ssh
+.gem
 .ghc
 .cabal
 .io_history

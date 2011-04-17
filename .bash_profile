@@ -34,6 +34,7 @@ export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
 export PATH="$HOME/Projects/android/SDK/tools:$PATH"
 export PATH="$HOME/Projects/android/SDK/platform-tools:$PATH"
+export PATH="/usr/local/Cellar/jruby/1.6.0/jruby/bin:$PATH"
 
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion.sh
