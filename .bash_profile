@@ -1,11 +1,11 @@
 . ~/.bin/bash_colors.sh
 
-take() {
+take () {
     mkdir -p $1 &&
     cd $1
 }
 
-parse_git_branch() {
+parse_git_branch () {
     git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/ \1/"
 }
 
