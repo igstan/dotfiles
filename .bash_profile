@@ -36,6 +36,8 @@ export PATH="$HOME/Projects/android/SDK/tools:$PATH"
 export PATH="$HOME/Projects/android/SDK/platform-tools:$PATH"
 export PATH="/usr/local/Cellar/jruby/1.6.0/jruby/bin:$PATH"
 
+export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
+
 source ~/.bin/git-completion.bash
 source ~/.bin/phpunit-completion.sh
 source ~/.bin/npm-completion.sh
