@@ -17,6 +17,10 @@
 .subversion
 .Rhistory
 .rstudio-desktop/
+.viminfo
+.lesshst
+.ivy2
+.cups
 Desktop/
 Documents/
 Downloads/
