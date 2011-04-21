@@ -5,6 +5,11 @@ take () {
     cd $1
 }
 
+# Useful when there are duplicate icons in context menus
+rebuild_launch_services_db () {
+    /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
+}
+
 parse_git_branch () {
     git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/ \1/"
 }
