@@ -20,6 +20,7 @@
 .cups
 .npmrc
 .kindle
+.clj_completions
 Desktop/
 Documents/
 Downloads/
