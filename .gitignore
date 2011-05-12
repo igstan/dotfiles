@@ -21,6 +21,9 @@
 .npmrc
 .kindle
 .clj_completions
+.m2
+.lein
+.pip
 Desktop/
 Documents/
 Downloads/
