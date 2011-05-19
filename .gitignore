@@ -24,6 +24,8 @@
 .m2
 .lein
 .pip
+.erlang.cookie
+.sbt.cache.lock
 Desktop/
 Documents/
 Downloads/
