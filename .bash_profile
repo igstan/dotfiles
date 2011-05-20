@@ -36,6 +36,7 @@ export PS1="\[\033]0;\w\007\]\[\033[0;32m\]λ\[\033[0;36m\] \W\[\033[00m\]\[\033
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
+export PATH="$HOME/Projects/android/NDK:$PATH"
 export PATH="$HOME/Projects/android/SDK/tools:$PATH"
 export PATH="$HOME/Projects/android/SDK/platform-tools:$PATH"
 export PATH="/usr/local/Cellar/jruby/1.6.0/jruby/bin:$PATH"
