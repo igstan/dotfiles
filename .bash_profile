@@ -33,7 +33,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # See this: http://apple.stackexchange.com/questions/5435/terminal-tips-and-tricks-for-mac-os-x/5455#5455
 export PS1="\[\033]0;\w\007\]\[\033[0;32m\]λ\[\033[0;36m\] \W\[\033[00m\]\[\033[32m\]\$(parse_git_branch)\[\033[00m\]: "
 
-export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
 export PATH="$HOME/Projects/android/NDK:$PATH"
@@ -42,6 +41,8 @@ export PATH="$HOME/Projects/android/SDK/platform-tools:$PATH"
 export PATH="/usr/local/Cellar/jruby/1.6.0/jruby/bin:$PATH"
 export PATH="/Applications/Racket/bin:$PATH"
 export PATH="$HOME/.gem/ruby/1.8/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 export SCALA_HOME="/usr/local/Cellar/scala/2.8.1"
 export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
