@@ -54,3 +54,5 @@ source ~/.bin/npm-completion.sh
 
 alias l="ls -alp"
 alias ll="ls -lp"
+
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
