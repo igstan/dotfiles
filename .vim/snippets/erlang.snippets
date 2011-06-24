@@ -1,0 +1,26 @@
+# module
+snippet mod
+	-module(`Filename()`).
+
+# function
+snippet fun
+	fun (${1:Args}) -> ${2:Body} end
+
+# receive
+snippet rec
+	receive
+		${1:Pattern} -> ${2:Body}
+	after ${3:Delay}
+		${4:Body}
+	end
+
+# named function
+snippet def
+	${1:Name}(${2:Args}) ->
+		${3:Body}
+
+# case expression
+snippet case
+	case ${1:Expr} of
+		${2:Pattern} -> ${3:Body}
+	end
