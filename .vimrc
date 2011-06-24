@@ -37,6 +37,8 @@ set fuopt=maxvert,maxhorz
 set wildmode=longest,list,full
 set wildmenu
 
+set hlsearch
+
 filetype plugin on
 
 highlight ExtraWhitespace ctermbg=red guibg=red
