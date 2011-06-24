@@ -26,6 +26,7 @@
 .pip
 .erlang.cookie
 .sbt.cache.lock
+.rvmrc
 Desktop/
 Documents/
 Downloads/
