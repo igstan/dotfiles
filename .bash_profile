@@ -49,9 +49,9 @@ export SCALA_HOME="/usr/local/Cellar/scala/2.8.1"
 export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 
-source ~/.bin/git-completion.bash
-source ~/.bin/phpunit-completion.sh
-source ~/.bin/npm-completion.sh
+source ~/.completions/git-completion.bash
+source ~/.completions/phpunit-completion.sh
+source ~/.completions/npm-completion.sh
 
 alias l="ls -alp"
 alias ll="ls -lp"
