@@ -1,0 +1,29 @@
+#!/usr/bin/env runhaskell
+{-# LANGUAGE OverloadedStrings #-}
+module Main where
+
+import Prelude hiding (putStrLn, readFile)
+
+import Data.ByteString (append, putStrLn, readFile)
+import Data.ByteString.Base64 (encode)
+import Data.ByteString.Char8 (ByteString)
+import System.FilePath (takeExtension)
+import System.Environment (getArgs)
+
+main :: IO ()
+main = do (file:_) <- getArgs
+          contents <- readFile file
+          putStrLn . (append (mimeType file)) . encode $ contents
+
+mimeType :: FilePath -> ByteString
+mimeType name = "data:" `append` mime `append` ";base64,"
+ where
+  mime = case tail . takeExtension $ name of
+              "png"  -> "image/png"
+              "jpg"  -> "image/jpg"
+              "jpeg" -> "image/jpeg"
+              "gif"  -> "image/gif"
+              "ico"  -> "image/x-icon"
+              "css"  -> "text/css"
+              "html" -> "text/html"
+              ext    -> error $ "Unsupported extension: " ++ ext
