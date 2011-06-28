@@ -8,6 +8,6 @@
 [alias]
 	st = status
 	stu = status -u
-	oneline = log --oneline
 	graph = log --oneline --all --graph --decorate
 	recommit = commit --amend -aC HEAD
+	one = log --oneline
