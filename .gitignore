@@ -27,6 +27,8 @@
 .erlang.cookie
 .sbt.cache.lock
 .rvmrc
+.eclipse_keyring
+Applications/
 Desktop/
 Documents/
 Downloads/
