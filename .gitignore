@@ -28,6 +28,7 @@
 .sbt.cache.lock
 .rvmrc
 .eclipse_keyring
+.irb-history
 Applications/
 Desktop/
 Documents/
