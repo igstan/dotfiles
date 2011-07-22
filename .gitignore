@@ -29,6 +29,7 @@
 .rvmrc
 .eclipse_keyring
 .irb-history
+.pgpass
 Applications/
 Desktop/
 Documents/
