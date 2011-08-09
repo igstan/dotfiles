@@ -1,7 +1,8 @@
 #!/bin/sh
 
 BREAKCHARS="(){}[],^%$#@\"\";:''|\\"
-CLOJURE=$CLASSPATH:/usr/local/Cellar/clojure/1.2.1/clojure.jar:${PWD}
+CONTRIB=/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+CLOJURE=$CLASSPATH:/usr/local/Cellar/clojure/1.2.1/clojure.jar:$CONTRIB:${PWD}
 
 if [ $# -eq 0 ]; then 
   exec rlwrap --remember -c -b $BREAKCHARS -f "$HOME"/.clj_completions java -cp $CLOJURE clojure.main
