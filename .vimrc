@@ -52,3 +52,5 @@ if has("gui_macvim")
   let macvim_hig_shift_movement = 1
   set fuopt=maxvert,maxhorz
 endif
+
+command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>
