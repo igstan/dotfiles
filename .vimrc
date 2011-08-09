@@ -30,13 +30,8 @@ set nowrap
 set backupdir=$TMPDIR,$TEMP,$TMP,.
 set directory=$TMPDIR,$TEMP,$TMP,.
 
-set lines=45 columns=120
-
-set fuopt=maxvert,maxhorz
-
 set wildmode=longest,list,full
 set wildmenu
-
 set hlsearch
 
 filetype plugin on
@@ -48,6 +43,11 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+if has("gui_running")
+  set lines=45 columns=120
+endif
+
 if has("gui_macvim")
-    let macvim_hig_shift_movement = 1
+  let macvim_hig_shift_movement = 1
+  set fuopt=maxvert,maxhorz
 endif
