@@ -33,6 +33,7 @@ set directory=$TMPDIR,$TEMP,$TMP,.
 set wildmode=longest,list,full
 set wildmenu
 set hlsearch
+set numberwidth=4
 
 filetype plugin on
 
