@@ -1,5 +1,3 @@
-" rob.robb.ns
-
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -18,7 +16,7 @@ hi FoldColumn     guifg=#9ca9b7    guibg=NONE       gui=italic
 hi vimFold        guifg=#dee4ea    guibg=NONE       gui=italic
 hi IncSearch      guifg=#212121    guibg=#b6b6b6
 hi LineNr         guifg=#AAAAAA    guibg=#EFEFEF
-hi ModeMsg        guifg=#EE0033    guibg=NONE
+hi ModeMsg        guifg=#555555    guibg=NONE
 hi MoreMsg        guifg=#8f9d6a    guibg=NONE
 hi NonText        guifg=#EFEFEF    guibg=NONE
 hi Search         guifg=#000000    guibg=#FF8000    gui=NONE
