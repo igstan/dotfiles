@@ -20,7 +20,7 @@ set ff=unix
 
 set guifont=Menlo:h15
 
-colorscheme vilight
+colorscheme igstan
 
 " Thinner text cursor
 set gcr=i-ci:ver10-Cursor/lCursor
