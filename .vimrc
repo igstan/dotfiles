@@ -45,7 +45,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 if has("gui_running")
-  set lines=45 columns=120
+  set lines=45 columns=110
 endif
 
 if has("gui_macvim")
