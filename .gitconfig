@@ -12,3 +12,4 @@
 	graph = log --oneline --all --graph --decorate
 	recommit = commit --amend -aC HEAD
 	one = log --oneline
+	unstage = reset HEAD
