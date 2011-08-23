@@ -1,11 +1,18 @@
 source ~/.bin/bash_colors.sh
 
-hide-desktop() {
-  find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags hidden
-}
+toggle-desktop() {
+  local sentinel="$HOME/Desktop/.desktop-hidden"
+  local flag
 
-show-desktop() {
-  find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags nohidden
+  if [ -f $sentinel ]; then
+    rm $sentinel
+    flag="nohidden"
+  else
+    touch $sentinel
+    flag="hidden"
+  fi
+
+  find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags "$flag"
 }
 
 take () {
