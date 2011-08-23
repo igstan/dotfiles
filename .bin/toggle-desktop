@@ -1,0 +1,13 @@
+#!/bin/sh
+
+SENTINEL="$HOME/Desktop/.desktop-hidden"
+
+if [ -f $SENTINEL ]; then
+  rm $SENTINEL
+  FLAG="nohidden"
+else
+  touch $SENTINEL
+  FLAG="hidden"
+fi
+
+find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags "$FLAG"

@@ -1,19 +1,19 @@
 source ~/.bin/bash_colors.sh
 
-toggle-desktop() {
-  local sentinel="$HOME/Desktop/.desktop-hidden"
-  local flag
-
-  if [ -f $sentinel ]; then
-    rm $sentinel
-    flag="nohidden"
-  else
-    touch $sentinel
-    flag="hidden"
-  fi
-
-  find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags "$flag"
-}
+# toggle-desktop() {
+#   local sentinel="$HOME/Desktop/.desktop-hidden"
+#   local flag
+# 
+#   if [ -f $sentinel ]; then
+#     rm $sentinel
+#     flag="nohidden"
+#   else
+#     touch $sentinel
+#     flag="hidden"
+#   fi
+# 
+#   find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags "$flag"
+# }
 
 take () {
     mkdir -p $1 &&
@@ -71,5 +71,6 @@ source ~/.completions/npm-completion.sh
 alias l="ls -alp"
 alias ll="ls -lp"
 alias s="dirs -v"
+alias sbx="pushd $HOME/Projects/clients/shoeboxed/web && clear"
 
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
