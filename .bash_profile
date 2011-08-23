@@ -1,5 +1,13 @@
 source ~/.bin/bash_colors.sh
 
+hide-desktop() {
+  find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags hidden
+}
+
+show-desktop() {
+  find "$HOME/Desktop" -depth 1 \( ! -iname ".*" \) -print0 | xargs -0 chflags nohidden
+}
+
 take () {
     mkdir -p $1 &&
     cd $1
