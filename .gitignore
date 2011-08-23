@@ -30,6 +30,7 @@
 .eclipse_keyring
 .irb-history
 .pgpass
+.pgadmin_histoqueries
 Applications/
 Desktop/
 Documents/
