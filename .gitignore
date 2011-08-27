@@ -31,6 +31,7 @@
 .irb-history
 .pgpass
 .pgadmin_histoqueries
+.heroku/credentials
 Applications/
 Desktop/
 Documents/
