@@ -105,6 +105,7 @@ hi hsModule      guifg=#000000  guibg=NONE  gui=bold
 hi hsImport      guifg=#000000  guibg=NONE  gui=bold
 hi hsStructure   guifg=#000000  guibg=NONE  gui=bold
 hi hsTypedef     guifg=#000000  guibg=NONE  gui=bold
+hi hsForall      guifg=#000000  guibg=NONE  gui=bold
 hi hsDebug       guifg=#CC0033  guibg=NONE  gui=NONE
 hi hsVarSym      guifg=#004080  guibg=NONE  gui=NONE
 hi hsConSym      guifg=#004080  guibg=NONE  gui=NONE
