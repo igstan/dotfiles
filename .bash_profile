@@ -50,7 +50,7 @@ export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 
 source ~/.completions/git-completion.bash
-source ~/.completions/phpunit-completion.sh
+# source ~/.completions/phpunit-completion.sh
 source ~/.completions/npm-completion.sh
 
 alias l="ls -alp"
