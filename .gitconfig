@@ -13,3 +13,5 @@
 	recommit = commit --amend -aC HEAD
 	one = log --oneline
 	unstage = reset HEAD
+[push]
+	default = tracking
