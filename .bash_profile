@@ -64,6 +64,7 @@ source ~/.completions/npm-completion.sh
 alias l="ls -alp"
 alias ll="ls -lp"
 alias s="dirs -v"
+alias ..="cd ../"
 alias sbx="pushd $HOME/Projects/clients/shoeboxed/web && clear"
 
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
