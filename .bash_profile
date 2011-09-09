@@ -25,6 +25,14 @@ tman () {
     MANWIDTH=160 MANPAGER='col -bx' man $@ | mate
 }
 
+# initializing bash completions every time takes too much, so I use a function
+# to load it only when needed
+load-completions() {
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    source `brew --prefix`/etc/bash_completion
+  fi
+}
+
 export CLICOLOR=1
 export GREP_OPTIONS="--color"
 export LSCOLORS=ExFxCxDxBxegedabagacad
