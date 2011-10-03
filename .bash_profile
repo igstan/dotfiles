@@ -57,6 +57,8 @@ export SCALA_HOME="/usr/local/Cellar/scala/2.8.1"
 export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 
+export CATALINA_OPTS="-server -Xms512m -Xmx512m -XX:PermSize=128m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
+
 source ~/.completions/git-completion.bash
 # source ~/.completions/phpunit-completion.sh
 source ~/.completions/npm-completion.sh
