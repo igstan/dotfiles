@@ -59,9 +59,9 @@ export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 
 export CATALINA_OPTS="-server -Xms512m -Xmx512m -XX:PermSize=128m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
 
-source ~/.completions/git-completion.bash
-# source ~/.completions/phpunit-completion.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
 source ~/.completions/npm-completion.sh
+# source ~/.completions/phpunit-completion.sh
 
 alias l="ls -alp"
 alias ll="ls -lp"
