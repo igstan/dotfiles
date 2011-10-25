@@ -20,7 +20,6 @@ set ff=unix
 
 set guifont=Menlo:h15
 
-colorscheme igstan
 
 " Thinner text cursor
 set gcr=i-ci:ver10-Cursor/lCursor
@@ -46,6 +45,9 @@ autocmd BufWinLeave * call clearmatches()
 
 if has("gui_running")
   set lines=45 columns=110
+  colorscheme igstan
+else
+  colorscheme desert
 endif
 
 if has("gui_macvim")
