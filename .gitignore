@@ -33,6 +33,7 @@
 .pgadmin_histoqueries
 .heroku/credentials
 .tor
+.octave_hist
 Applications/
 Desktop/
 Documents/
