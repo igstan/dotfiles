@@ -4,7 +4,6 @@
 [color]
 	ui = auto
 [core]
-	editor = mate -wn
 	pager = less -FXRS -x4
 [alias]
 	st = status
