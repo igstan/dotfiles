@@ -53,7 +53,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
-export SCALA_HOME="/usr/local/Cellar/scala/2.8.1"
+export SCALA_HOME="/usr/local/Cellar/scala/2.9.1"
 export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 
