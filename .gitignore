@@ -32,6 +32,7 @@
 .pgpass
 .pgadmin_histoqueries
 .heroku/credentials
+.tor
 Applications/
 Desktop/
 Documents/
