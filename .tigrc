@@ -1,1 +1,5 @@
 set line-number-interval = 1
+set show-date = local
+# color date cyan default
+# color cursor color254 green
+# color title-focus white red
