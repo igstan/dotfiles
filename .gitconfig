@@ -5,6 +5,7 @@
 	ui = auto
 [core]
 	pager = less -FXRS -x4
+	excludesfile = /Users/igstan/.gitexclude
 [alias]
 	st = status
 	stu = status -u
