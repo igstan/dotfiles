@@ -1,0 +1,1 @@
+find ~/Documents/Icons -type f -name $1
