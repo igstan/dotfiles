@@ -20,7 +20,8 @@ var mimes = {
     "jpeg": "image/jpeg",
     "jpg": "image/jpeg",
     "png": "image/png",
-    "gif": "image/gif"
+    "gif": "image/gif",
+    "svg": "image/svg+xml"
 };
 
 var extension = function (path) {
