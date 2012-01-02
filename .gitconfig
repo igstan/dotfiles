@@ -6,9 +6,11 @@
 [core]
 	pager = less -FXRS -x4
 	excludesfile = /Users/igstan/.gitexclude
+	editor = mate -wn
 [alias]
 	st = status
 	stu = status -u
+	sut = status -u
 	graph = log --oneline --all --graph --decorate
 	recommit = commit --amend -aC HEAD
 	one = log --oneline
