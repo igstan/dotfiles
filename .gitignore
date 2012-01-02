@@ -46,3 +46,11 @@ Projects/
 Public/
 Sites/
 Workspaces/
+.nide
+.sbt
+.Xauthority
+.ceylon/
+.fontconfig/
+.jline-clojure.main.history
+.kod/
+.npmignore
