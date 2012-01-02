@@ -34,7 +34,6 @@ load-completions() {
 }
 
 export CLICOLOR=1
-export GREP_OPTIONS="--color"
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # \[\033]0;\w\007\] puts the full path in Terminal.app's title bar.
@@ -44,8 +43,6 @@ export PS1="\[\033]0;\w\007\]\[\033[0;32m\]λ\[\033[0;36m\] \W\[\033[00m\]\[\033
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
 export PATH="$HOME/Projects/android/NDK:$PATH"
-export PATH="$HOME/Projects/android/SDK/tools:$PATH"
-export PATH="$HOME/Projects/android/SDK/platform-tools:$PATH"
 export PATH="/usr/local/Cellar/jruby/1.6.0/jruby/bin:$PATH"
 export PATH="/Applications/Racket/bin:$PATH"
 export PATH="$HOME/.gem/ruby/1.8/bin:$PATH"
@@ -54,14 +51,15 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
 export SCALA_HOME="/usr/local/Cellar/scala/2.9.1"
-export ANDROID_SDK_HOME="$HOME/Projects/android/SDK"
+export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/r15"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
-
+export GREP_OPTIONS="--color"
+export ACK_OPTIONS="-C 2 --ignore-dir=target"
 export CATALINA_OPTS="-server -Xms512m -Xmx512m -XX:PermSize=128m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/scala
-source ~/.completions/npm-completion.sh
+# source /usr/local/etc/bash_completion.d/scala
+# source ~/.completions/npm-completion.sh
 # source ~/.completions/phpunit-completion.sh
 
 alias l="ls -alp"
