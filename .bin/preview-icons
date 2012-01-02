@@ -1,1 +1,3 @@
+#!/bin/sh
+
 find ~/Documents/Icons -type f -name $1 -exec qlmanage -p {} \;
