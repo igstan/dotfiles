@@ -26,4 +26,5 @@ mimeType name = "data:" `append` mime `append` ";base64,"
               "ico"  -> "image/x-icon"
               "css"  -> "text/css"
               "html" -> "text/html"
+              "otf"  -> "font/opentype"
               ext    -> error $ "Unsupported extension: " ++ ext
