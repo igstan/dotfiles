@@ -1,0 +1,19 @@
+#!/bin/sh
+
+files=`find $HOME/Library/LaunchAgents -name "*$1*"`
+
+if [[ `find $HOME/Library/LaunchAgents -name "*$1*" | wc -l` -eq 1 ]]; then
+  launchctl list | grep $1
+
+  if [[ $? -eq 0 ]]; then
+    echo "Stoping service: $files"
+    launchctl unload -w $files
+  else
+    echo "Starting service: $files"
+    launchctl load -w $files
+  fi
+
+else
+  echo "Multiple launch files matched: "
+  echo $files
+fi
