@@ -67,6 +67,7 @@ alias l="ls -alp"
 alias ll="ls -lp"
 alias s="dirs -v"
 alias ..="cd ../"
-alias sbx="pushd $HOME/Projects/clients/shoeboxed/sbx-modules && clear"
+alias sbx="pushd $HOME/Projects/clients/shoeboxed/WEB && clear"
+alias mob="pushd $HOME/Projects/clients/shoeboxed/mobile-app/MOB && clear"
 
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
