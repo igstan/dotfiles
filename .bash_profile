@@ -51,6 +51,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
 export SCALA_HOME="/usr/local/Cellar/scala/2.9.1"
+export ANDROID_HOME="/usr/local/Cellar/android-sdk/r15"
 export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/r15"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 export GREP_OPTIONS="--color"
