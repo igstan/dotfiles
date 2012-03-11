@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dscl . -delete /Groups/$1
