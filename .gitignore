@@ -13,6 +13,7 @@
 .fontconfig/
 .gem
 .ghc
+.gradle/
 .heroku/credentials
 .hgignore_global
 .irb-history
