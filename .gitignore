@@ -36,6 +36,7 @@
 .pip
 .Rhistory
 .rstudio-desktop/
+.rvm/
 .rvmrc
 .sbt
 .sbt.cache.lock
