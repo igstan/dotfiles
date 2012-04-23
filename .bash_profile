@@ -71,4 +71,4 @@ alias ..="cd ../"
 alias sbx="pushd $HOME/Projects/clients/shoeboxed/WEB && clear"
 alias mob="pushd $HOME/Projects/clients/shoeboxed/mobile-app/MOB && clear"
 
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
