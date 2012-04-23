@@ -19,9 +19,9 @@
 	unignore = !git update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep ^[a-z]
 	cached-diff = diff --cached
-[push]
-	default = tracking
 [svn]
 	rmdir = true
 [branch "master"]
 	rebase = true
+[push]
+	default = upstream
