@@ -1,28 +1,32 @@
 source ~/.bin/bash_colors.sh
 
+pbdir () {
+  echo "cd `pwd`" | pbcopy
+}
+
 take () {
-    mkdir -p $1 &&
-    cd $1
+  mkdir -p $1 &&
+  cd $1
 }
 
 # Rebuild LaunchServices database.
 # Useful when having duplicate icons in context menus
 lsrebuild () {
-    /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
+  /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
 }
 
 parse_git_branch () {
-    git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/ \1/"
+  git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/ \1/"
 }
 
 # open a man page in Preview
 pman () {
-    man -t "$@" | open -f -a /Applications/Preview.app
+  man -t "$@" | open -f -a /Applications/Preview.app
 }
 
 # open a man page in TextMate
 tman () {
-    MANWIDTH=160 MANPAGER='col -bx' man $@ | mate
+  MANWIDTH=160 MANPAGER='col -bx' man $@ | mate
 }
 
 # initializing bash completions every time takes too much, so I use a function
