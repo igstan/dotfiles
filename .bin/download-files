@@ -1,0 +1,4 @@
+# $1: base URL
+# $2: ack pattern for individual file URLs 
+
+curl $1 | ack -o "$2" | sort | uniq | xargs -I {} wget "$1{}"
