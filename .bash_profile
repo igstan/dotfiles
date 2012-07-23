@@ -62,6 +62,7 @@ export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 export GREP_OPTIONS="--color"
 export ACK_OPTIONS="--ignore-dir=target"
 export CATALINA_OPTS="-server -Xms512m -Xmx512m -XX:PermSize=128m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true"
+export MAVEN_OPTS='-Xmx2048m -Xms512m -XX:PermSize=128m -XX:MaxPermSize=2048m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true'
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/tig-completion.bash
