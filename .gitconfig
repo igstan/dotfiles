@@ -6,7 +6,7 @@
 [core]
 	pager = less -FXRS -x4
 	excludesfile = /Users/igstan/.gitexclude
-	editor = sublime -wb
+	editor = sublime -w
 	quotepath = false
 [alias]
 	st = status
