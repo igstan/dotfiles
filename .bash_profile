@@ -77,4 +77,8 @@ alias ..="cd ../"
 alias sbx="pushd $HOME/Projects/clients/shoeboxed/WEB && clear"
 alias mob="pushd $HOME/Projects/clients/shoeboxed/mobile-app/MOB && clear"
 
+info  () { echo -e " ${BRIGHT_CYAN}⚑ $@$RESET"; }
+warn  () { echo -e " ${BRIGHT_YELLOW}⚑ $@$RESET"; }
+error () { echo -e " ${BRIGHT_RED}⚑ $@$RESET"; }
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
