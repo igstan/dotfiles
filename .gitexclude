@@ -1,2 +1,14 @@
 .DS_Store
+
+# Sublime project files
+*.sublime-project
+*.sublime-workspace
+
+# TextMate project files
 *.tmproj
+
+# Eclipse files
+.classpath
+.settings
+.project
+.cache
