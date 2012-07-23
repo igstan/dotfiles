@@ -1,0 +1,1 @@
+SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2048M -Djava.awt.headless=true"
