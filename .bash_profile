@@ -55,6 +55,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
 export SCALA_HOME="/usr/local/Cellar/scala/2.9.1"
+export GROOVY_HOME="/usr/local/Cellar/groovy/2.0.0/libexec"
 export ANDROID_HOME="/usr/local/Cellar/android-sdk/r18"
 export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/r18"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
