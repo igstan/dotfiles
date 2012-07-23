@@ -20,6 +20,7 @@
 	unignore = !git update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep ^[a-z]
 	cached-diff = diff --cached
+	diff-stash = stash show -p
 [svn]
 	rmdir = true
 [branch "master"]
