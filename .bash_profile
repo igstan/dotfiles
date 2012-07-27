@@ -1,5 +1,10 @@
 source ~/.bin/bash_colors.sh
 
+log   () { echo -e " $1⚑ ${@:2}$RESET"; }
+info  () { log $BRIGHT_CYAN $@; }
+warn  () { log $BRIGHT_YELLOW $@; }
+error () { log $BRIGHT_RED $@; }
+
 pbdir () {
   echo "cd `pwd`" | pbcopy
 }
@@ -78,10 +83,6 @@ alias l="ls -alp"
 alias ll="ls -lp"
 alias s="dirs -v"
 alias ..="cd ../"
-
-info  () { echo -e " ${BRIGHT_CYAN}⚑ $@$RESET"; }
-warn  () { echo -e " ${BRIGHT_YELLOW}⚑ $@$RESET"; }
-error () { echo -e " ${BRIGHT_RED}⚑ $@$RESET"; }
 
 [[ -s "$HOME/.igstanrc" ]]        && source "$HOME/.igstanrc"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
