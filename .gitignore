@@ -19,6 +19,7 @@
 .groovy
 .heroku/credentials
 .hgignore_global
+.igstanrc
 .irb-history
 .ivy2
 .jline-clojure.main.history
