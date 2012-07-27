@@ -31,10 +31,14 @@ tman () {
 
 # initializing bash completions every time takes too much, so I use a function
 # to load it only when needed
-load-completions() {
+load-completions () {
   if [ -f `brew --prefix`/etc/bash_completion ]; then
     source `brew --prefix`/etc/bash_completion
   fi
+}
+
+brew-version () {
+  brew ls --versions $1 | grep -oE ' .+$' | tr -d ' '
 }
 
 export CLICOLOR=1
@@ -56,10 +60,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
-export SCALA_HOME="/usr/local/Cellar/scala/2.9.1"
-export GROOVY_HOME="/usr/local/Cellar/groovy/2.0.0/libexec"
-export ANDROID_HOME="/usr/local/Cellar/android-sdk/r18"
-export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/r18"
+export SCALA_HOME="/usr/local/Cellar/scala/$(brew-version 'scala')"
+export GROOVY_HOME="/usr/local/Cellar/groovy/$(brew-version 'groovy')/libexec"
+export ANDROID_HOME="/usr/local/Cellar/android-sdk/$(brew-version 'android-sdk')"
+export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/$(brew-version 'android-sdk')"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 export GREP_OPTIONS="--color"
 export ACK_OPTIONS="--ignore-dir=target"
