@@ -1,2 +1,3 @@
 :set prompt "> "
 :set -hide-package mtl
+:m +Control.Applicative Control.Arrow
