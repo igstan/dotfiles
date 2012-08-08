@@ -20,9 +20,7 @@
 .heroku/credentials
 .hgignore_global
 .igstanrc
-.irb-history
 .ivy2
-.jline-clojure.main.history
 .jrebel/
 .kindle
 .kod/
@@ -39,7 +37,6 @@
 .pgadmin_histoqueries
 .pgpass
 .pip
-.Rhistory
 .rstudio-desktop/
 .rvm/
 .rvmrc
