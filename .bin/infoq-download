@@ -1,8 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-logs=`pbpaste`
-baseUrl=`echo $logs | grep -Eo "rtmpe://[^ ]+\/ " | grep -Eo "[^ ]+"`
-path=`echo $logs | grep -Eo "NetStream.Play.Reset \( [^ ]+ \) " | grep -Eo "[a-zA-Z0-9\/-]+.mp4"`
-name=`echo $logs | grep -Eo "NetStream.Play.Reset \( [^ ]+ \) " | grep -Eo "[a-zA-Z0-9-]+.mp4"`
+baseUrl="rtmpe://video.infoq.com/cfx/st/"
+
+path=`curl $1                                                         |
+      grep -Eo "jsclassref='[^']+"                                    |
+      sed "s/jsclassref='//"                                          |
+      php -r "echo base64_decode(file_get_contents('php://stdin'));"`
+
+name=`echo $path | grep -Eo "[a-zA-Z0-9-]+.mp4"`
 
 rtmpdump -r "$baseUrl$path" -o "$HOME/Desktop/infoq-$name"
