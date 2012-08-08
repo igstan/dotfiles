@@ -1,9 +1,4 @@
-source ~/.bin/bash_colors.sh
-
-log   () { echo -e " $1⚑ ${@:2}$RESET"; }
-info  () { log $BRIGHT_CYAN $@; }
-warn  () { log $BRIGHT_YELLOW $@; }
-error () { log $BRIGHT_RED $@; }
+source "$HOME/.bin/helpers.sh"
 
 pbdir () {
   echo "cd `pwd`" | pbcopy
