@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+read -sp "Enter password for $GITHUB_USER: " password; echo
+
+export GITHUB_PASSWORD="$password"
+/usr/local/bin/gist "$@"
+unset GITHUB_PASSWORD
