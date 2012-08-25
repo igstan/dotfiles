@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -z "$IGSTAN_MAVEN_SETTINGS" ] ; then
+  /usr/bin/mvn "$@"
+else
+  /usr/bin/mvn -s "$IGSTAN_MAVEN_SETTINGS" "$@"
+fi
