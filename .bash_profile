@@ -1,7 +1,7 @@
 source "$HOME/.bin/helpers.sh"
 
 pbdir () {
-  echo "cd `pwd`" | pbcopy
+  echo "cd \"`pwd`\"" | pbcopy
 }
 
 take () {
