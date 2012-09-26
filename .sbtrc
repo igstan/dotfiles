@@ -1,0 +1,3 @@
+alias learn=test-only *Learning*
+alias jetty=~;container:start; container:reload /
+alias scala=console
