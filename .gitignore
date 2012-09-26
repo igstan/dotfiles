@@ -2,6 +2,7 @@
 
 .adobe
 .android
+.bower/
 .cabal
 .ceylon/
 .CFUserTextEncoding
@@ -26,9 +27,11 @@
 .kod/
 .lein
 .lesshst
+.lighttable/
 .m2
 .MacOSX
 .netbeans
+.netrc
 .nide
 .npm
 .npmignore
@@ -45,10 +48,13 @@
 .ssh
 .subversion
 .subversion_IDEA/
+.task
 .tor
 .Trash
+.trc
 .viminfo
 .Xauthority
+.zinc
 
 Applications/
 Desktop/
