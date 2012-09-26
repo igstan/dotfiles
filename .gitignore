@@ -55,6 +55,7 @@ Desktop/
 Documents/
 Downloads/
 Dropbox/
+Library/
 Movies/
 Music/
 Pictures/
@@ -62,14 +63,3 @@ Projects/
 Public/
 Sites/
 Workspaces/
-
-# Exclude everything inside Library/ except TextMate's Bundles and Themes dirs
-Library/*
-!Library/Application Support/
-
-Library/Application Support/*
-!Library/Application Support/TextMate/
-
-Library/Application Support/TextMate/*
-!Library/Application Support/TextMate/Bundles
-!Library/Application Support/TextMate/Themes
