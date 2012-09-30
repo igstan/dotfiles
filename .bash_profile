@@ -41,6 +41,10 @@ brew-version () {
   brew ls --versions $1 | grep -oE ' .+$' | tr -d ' '
 }
 
+dict () {
+  open "dict://$1"
+}
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
