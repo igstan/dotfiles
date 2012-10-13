@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+# A simple utility to clean up IMAP folders that Thunderbird generates.
+
+import os, sys, getpass, imaplib
+
+def integral(a):
+  try:
+    int(a)
+    return True
+  except ValueError, TypeError:
+    return False
+
+def credentials(accounts):
+    try:
+        print('Available accounts:\n')
+        for i, account in enumerate(accounts):
+            print("{} - {}".format(i, account))
+        print("")
+        raw_account = raw_input('Account [{}]: '.format(accounts[0]))
+        if raw_account != '':
+            email = accounts[int(raw_account)] if integral(raw_account) else raw_account
+        else:
+            email = accounts[0]
+        password = getpass.getpass('Password: '.format(email))
+        return [email, password]
+    except KeyboardInterrupt:
+        print('\n')
+        sys.exit(0)
+
+accounts = os.getenv('GMAIL_ACCOUNTS').split(';')
+
+gmail = imaplib.IMAP4_SSL('imap.gmail.com')
+gmail.login(*credentials(accounts))
+
+print('')
+for box in ['Drafts', 'Sent', 'Trash']:
+    print('deleting mailbox {}...'.format(box))
+    print(gmail.delete(box))
