@@ -71,8 +71,12 @@ export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/$(brew-version 'android-s
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 export GREP_OPTIONS="--color"
 export ACK_OPTIONS="--ignore-dir=target"
+# Other useful JVM options:
+#
+#  -XX:+HeapDumpOnOutOfMemoryError
+#  -XX:HeapDumpPath=$HOME/Desktop
+#
 export JVM_OPTS="-server -Xms512m -Xmx2048m -XX:PermSize=128m -XX:MaxPermSize=2048m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true"
-# export JVM_OPTS="-Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$HOME/Desktop"
 export CATALINA_OPTS="$JVM_OPTS"
 export MAVEN_OPTS="$JVM_OPTS"
 
