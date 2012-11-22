@@ -64,6 +64,7 @@ export PATH="$HOME/Projects/android/NDK:$PATH"
 export PATH="/Applications/Racket/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.shoeboxed:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
 export SCALA_HOME="/usr/local/Cellar/scala/$(brew-version 'scala')/libexec"
