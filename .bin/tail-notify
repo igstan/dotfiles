@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+while read line;
+do
+  if echo $line | grep --color -E 'HTTP/1.1" [^2][0-9]{2}'
+  then
+    status=`echo $line | grep -oE 'HTTP/1.1" [^23][0-9]{2}' | grep -oE [0-9]{3}`
+    say "$status on API server";
+  else
+    echo $line;
+  fi
+done
