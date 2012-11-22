@@ -28,9 +28,10 @@ def credentials(accounts):
         sys.exit(0)
 
 accounts = os.getenv('GMAIL_ACCOUNTS').split(';')
+creds = credentials(accounts)
 
 gmail = imaplib.IMAP4_SSL('imap.gmail.com')
-gmail.login(*credentials(accounts))
+gmail.login(*creds)
 
 print('')
 for box in ['Drafts', 'Sent', 'Trash']:
