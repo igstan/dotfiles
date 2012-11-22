@@ -4,6 +4,7 @@
 .android
 .bees/
 .bower/
+.c9/
 .cabal
 .ceylon/
 .CFUserTextEncoding
@@ -31,6 +32,7 @@
 .lighttable/
 .m2
 .MacOSX
+.matplotlib
 .netbeans
 .netrc
 .nide
@@ -44,8 +46,10 @@
 .rstudio-desktop/
 .rvm/
 .rvmrc
+.s3cfg
 .sbt
 .sbt.cache.lock
+.shoeboxed
 .ssh
 .subversion
 .subversion_IDEA/
