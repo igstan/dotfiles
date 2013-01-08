@@ -21,6 +21,7 @@
 	ignored = !git ls-files -v | grep ^[a-z]
 	cached-diff = diff --cached
 	diff-stash = stash show -p
+	add-deleted = !git ls-files --deleted | xargs git rm
 [svn]
 	rmdir = true
 [branch "master"]
