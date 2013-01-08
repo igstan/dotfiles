@@ -12,3 +12,7 @@
 .settings
 .project
 .cache
+
+# Intellij IDEA files
+.idea
+.idea_modules
