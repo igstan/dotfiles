@@ -73,7 +73,6 @@ export SCALA_HOME="/usr/local/Cellar/scala/$(brew-version 'scala')/libexec"
 export GROOVY_HOME="/usr/local/Cellar/groovy/$(brew-version 'groovy')/libexec"
 export ANDROID_HOME="/usr/local/Cellar/android-sdk/$(brew-version 'android-sdk')"
 export ANDROID_SDK_HOME="/usr/local/Cellar/android-sdk/$(brew-version 'android-sdk')"
-export GRAILS_HOME="/usr/local/Cellar/grails/$(brew-version 'grails')/libexec"
 
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 export GREP_OPTIONS="--color"
