@@ -82,9 +82,10 @@ export ACK_OPTIONS="--ignore-dir=target"
 #  -XX:+HeapDumpOnOutOfMemoryError
 #  -XX:HeapDumpPath=$HOME/Desktop
 #
-export JVM_OPTS="-server -Xms512m -Xmx2048m -XX:PermSize=128m -XX:MaxPermSize=2048m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true"
-export CATALINA_OPTS="$JVM_OPTS"
+# For remote debugging:  -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+export JVM_OPTS="-server -Xms512m -Xmx2048m -XX:PermSize=128m -XX:MaxPermSize=2048m -Djava.awt.headless=true"
 export MAVEN_OPTS="$JVM_OPTS"
+export CATALINA_OPTS="$JVM_OPTS"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/tig-completion.bash
