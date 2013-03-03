@@ -97,6 +97,7 @@ alias l="ls -alp"
 alias ll="ls -lp"
 alias s="dirs -v"
 alias ..="cd ../"
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 [[ -s "$HOME/.igstanrc" ]]        && source "$HOME/.igstanrc"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
