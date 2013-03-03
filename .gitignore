@@ -43,6 +43,7 @@
 .npmignore
 .npmrc
 .octave_hist
+.pearrc
 .pgadmin_histoqueries
 .pgpass
 .pip
