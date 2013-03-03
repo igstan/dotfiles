@@ -18,5 +18,8 @@ user_pref("dom.disable_window_open_feature.scrollbars", true);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("privacy.donottrackheader.enabled", true);
 
+// Old downloads UI
+user_pref("browser.download.useToolkitUI", true);
+
 // warn on quit if downloads are in progress
 user_pref("browser.download.manager.quitBehavior", 2);
