@@ -68,6 +68,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.shoeboxed:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
+export JAVA_HOME=`/usr/libexec/java_home`
 export SCALA_HOME="/usr/local/Cellar/scala/$(brew-version 'scala')/libexec"
 export GROOVY_HOME="/usr/local/Cellar/groovy/$(brew-version 'groovy')/libexec"
 export ANDROID_HOME="/usr/local/Cellar/android-sdk/$(brew-version 'android-sdk')"
