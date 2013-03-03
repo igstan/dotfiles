@@ -60,6 +60,7 @@ export EDITOR="sublime -w"
 
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="/usr/local/lib/node:$PATH"
+export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/Projects/android/NDK:$PATH"
 export PATH="/Applications/Racket/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
