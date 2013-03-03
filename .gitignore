@@ -9,6 +9,7 @@
 .ceylon/
 .CFUserTextEncoding
 .clj_completions
+.composer/
 .cups
 .dropbox
 .DS_Store
@@ -22,6 +23,7 @@
 .groovy
 .heroku/credentials
 .hgignore_global
+.httpie
 .igstanrc
 .ivy2
 .jrebel/
@@ -36,6 +38,7 @@
 .netbeans
 .netrc
 .nide
+.node-gyp/
 .npm
 .npmignore
 .npmrc
@@ -43,6 +46,7 @@
 .pgadmin_histoqueries
 .pgpass
 .pip
+.postgresql
 .rstudio-desktop/
 .rvm/
 .rvmrc
@@ -57,6 +61,7 @@
 .tor
 .Trash
 .trc
+.vagrant.d/
 .viminfo
 .Xauthority
 .zinc
