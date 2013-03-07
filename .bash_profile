@@ -86,6 +86,8 @@ export ACK_OPTIONS="--ignore-dir=target"
 export JVM_OPTS="-server -Xms512m -Xmx2048m -XX:PermSize=128m -XX:MaxPermSize=2048m -Djava.awt.headless=true"
 export MAVEN_OPTS="$JVM_OPTS"
 export CATALINA_OPTS="$JVM_OPTS"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/tig-completion.bash
