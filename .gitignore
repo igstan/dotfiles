@@ -21,7 +21,7 @@
 .ghc
 .gradle/
 .groovy
-.heroku/credentials
+.heroku/
 .hgignore_global
 .httpie
 .igstanrc
