@@ -45,6 +45,10 @@ dict () {
   open "dict://$1"
 }
 
+yt () {
+  youtube-dl -o "$HOME/Downloads/%(title)s.%(ext)s" "$@"
+}
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
