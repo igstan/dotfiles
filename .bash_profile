@@ -49,6 +49,10 @@ yt () {
   youtube-dl -o "$HOME/Downloads/%(title)s.%(ext)s" "$@"
 }
 
+volume () {
+  osascript -e "set volume output volume $1"
+}
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
