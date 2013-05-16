@@ -48,6 +48,7 @@
 .pgpass
 .pip
 .postgresql
+.rnd
 .rstudio-desktop/
 .rvm/
 .rvmrc
