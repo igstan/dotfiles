@@ -54,6 +54,7 @@
 .rvmrc
 .s3cfg
 .sbt
+.sbt-playground
 .sbt.cache.lock
 .shoeboxed
 .ssh
