@@ -1,3 +1,4 @@
-alias learn=test-only *Learning*
 alias jetty=~;container:start; container:reload /
 alias scala=console
+alias dep=set libraryDependencies +=
+alias scalaz=set libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.0.0"
